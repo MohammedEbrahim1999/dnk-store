@@ -1,0 +1,95 @@
+.header .container {
+    max-width: 100%;
+}
+
+.nav-edit {
+    background-color: #14618F !important;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px !important;
+}
+
+a {
+    color: var(--white--color) !important;
+    font-size: 20px !important;
+
+}
+
+div.side-dad {
+    position: relative;
+    background-color: #FFF;
+}
+
+div.side {
+    width: 400px;
+    height: 800px;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 12;
+    top: -100px;
+    overflow: hidden;
+    right: 0px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: -.1s;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+div.shop {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+div.shop button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+.cart {
+    margin: 300px auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+.cart h2 {
+    font-size: 16px;
+}
+
+.side .butt-a {
+    background-color: #0084d6;
+    color: #FFF;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.side .butt-a:hover {
+    background-color: #03578a;
+}
+
+.side .butt-a .go-a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+@keyframes example {
+    0% {
+        right: -500px;
+    }
+    100% {
+        right: 0px;
+    }
+}
