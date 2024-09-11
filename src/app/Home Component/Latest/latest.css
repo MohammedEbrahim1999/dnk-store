@@ -1,0 +1,198 @@
+/* .latest {
+    padding: 70px;
+}
+
+.slick-next,
+.slick-prev {
+    background-color: rgb(196, 196, 196);
+    line-height: 1.2;
+    border-radius: 11px;
+}
+
+.slick-next:hover,
+.slick-next:focus,
+.slick-prev:hover,
+.slick-prev:focus {
+    background-color: rgb(196, 196, 196);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1.2;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide img {
+    width: 50%;
+    margin: auto;
+}
+
+.one{
+    background: url('/imgs/itemOne.jpg') center no-repeat;
+    background-size: cover;
+    text-align: left;
+    height: 500px;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 25px;
+    position: relative;
+    margin-top: 60px;
+    margin-right: 20px;
+    width: 400px;
+    margin-left: 60px;
+}
+.one .overlay,
+.two .overlay,
+.three .overlay{
+    background: #000;  
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.one .text,
+.two .text,
+.three .text{
+    position: absolute;
+    z-index: 5;
+    bottom: 45px;
+    line-height: 30px;
+}
+.one .text h3,
+.one .text p,
+.two .text h3,
+.two .text p,
+.three .text h3,
+.three .text p{
+    color: #FFF;
+    margin-bottom: 25px;
+}
+
+.two{
+    background: url('/imgs/itemTwoLatest.jpg') center no-repeat;
+    background-size: cover;
+    text-align: left;
+    height: 500px;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 25px;
+    position: relative;
+    margin-top: 60px;
+    margin-right: 20px;
+    width: 400px;
+}
+.three{
+    background: url('/imgs/itemThree.jpg') center no-repeat;
+    background-size: cover;
+    text-align: left;
+    height: 500px;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 25px;
+    position: relative;
+    margin-top: 60px;
+    margin-right: 20px;
+    width: 400px;
+}
+.one button,
+.two button,
+.three button{
+    background-color: #FFF;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    padding:10px;
+    width: 160px;
+    transition: .6s;
+}
+.one button:hover,
+.two button:hover,
+.three button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+@media(max-width:1500px){
+    .one{
+        margin-left: 0px;
+    }
+}
+.latest-divs{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px !important;
+} */
+/* .overlay{
+    background: #000;  
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+} */
+.latest {
+    padding: 30px 0;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent overlay */
+    transition: background 0.3s ease;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensure images cover the card area */
+    max-height: 400px;
+    /* Adjust based on your design */
+}
+
+.card:hover .card-img-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    /* Darken on hover */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,27 @@
+.we{
+    padding: 50px;
+    background-color: #F5F7F9;
+}
+.we .left{
+    background-color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.we .divide{
+    width: 150px;
+    height: 4px;
+    background-color: #0084D6;
+}
+.we .left h1{
+   font-weight: bold; 
+}
+.we .left p{
+    width: 105%;
+}
+.we .right img{
+    max-width: 100%;
+}

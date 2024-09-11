@@ -1,0 +1,49 @@
+.lost{
+    padding: 100px 100px 20px 100px;
+}
+.lost h6{
+    margin-bottom: 50px;
+}
+.lost form{
+    display: flex;
+    flex-direction: column;
+}
+.lost form label{
+    margin-bottom: 15px;
+}
+.lost form label span{
+    color: Red;
+    font-weight: bolder;
+}
+.lost form input{
+    width: 450px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    max-width: auto;
+}
+.lost form button{
+    background-color: #0084D6;
+    color: #FFF;
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+
+}
+.lost form button:hover{
+    background-color: #07598c;
+}
+@media(max-width: 1500px){
+    .lost form input{
+        width: 200px;
+    }
+}
+.rego{
+    color: #0084D6 !important;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.rego:hover{
+    text-decoration: underline;
+}

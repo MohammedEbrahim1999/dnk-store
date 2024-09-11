@@ -1,0 +1,27 @@
+.product{
+    background-color: #F5F7F9;
+    padding: 45px;
+}
+.product .detail{
+    display: flex;
+    gap: 25px;
+}
+.product .detail img{
+    width: 100%;
+}
+.product .detail .content{
+    display: flex;
+    padding: 25px;
+    width: fit-content;
+    flex-direction: column;
+    line-height: 45px;
+}
+.product .detail .add{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1300px){
+    .product .detail{
+        flex-direction: column;
+    }
+}

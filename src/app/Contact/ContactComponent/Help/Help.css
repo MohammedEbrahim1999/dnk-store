@@ -1,0 +1,30 @@
+.help{
+    text-align: center;
+    padding: 60px;
+    background-color: #F5F7F9;
+}
+.help h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.help .divide{
+    width: 150px;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+}
+.help .here{
+    background-color: #FFF;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 310px;
+}
+.help .here p:first-of-type{
+    line-height: 30px;
+}
+.help .here p:last-of-type{
+    color: #0084D6;
+    font-weight: bold;
+}

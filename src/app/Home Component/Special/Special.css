@@ -1,0 +1,96 @@
+.special {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #F5F7F9;
+    padding: 15px;
+}
+
+.special .overlay {
+    /* background: #166087; */
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0084D6 -50%, var(--overlay--color) 100%);
+
+}
+
+.special .row {
+    margin: 100px 0;
+}
+
+.time {
+    background: url('/imgs/banner.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: left;
+    height: auto;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 25px;
+    position: relative;
+    background-attachment: fixed;
+    padding: 85px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.time p {
+    color: #FFF;
+    font-size: 22px;
+    margin-bottom: 25px;
+    position: inherit;
+    z-index: 2;
+}
+
+.time h1 {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    position: inherit;
+    z-index: 2;
+}
+
+.time p.dolor {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 25px;
+    position: inherit;
+    z-index: 2;
+}
+
+.time h4 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    position: inherit;
+    z-index: 2;
+}
+
+.time button {
+    background-color: #FFF;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    width: 120px;
+    transition: .6s;
+    position: inherit;
+    z-index: 2;
+}
+
+.time button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+@media(max-width: 1100px){
+    .time{
+        background-position: right;
+    }
+}

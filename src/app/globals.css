@@ -1,0 +1,10 @@
+:root{
+    --white--color: #FFF;
+    --hover--color: #547896;
+    --subtitle--color: #777;
+    --border--color: #9a9494;
+    --overlay--color: #000000;
+}
+.flex{
+    display: flex;
+}

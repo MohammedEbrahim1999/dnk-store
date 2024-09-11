@@ -1,0 +1,15 @@
+.copy{
+    padding: 25px;
+}
+.copy ul{
+    gap: 25px;
+}
+.copy ul li{
+    list-style: none;
+}
+.copy ul li a i{
+    color: #000;
+}
+.copy ul li a i:hover {
+    color: var(--hover--color) !important;
+}

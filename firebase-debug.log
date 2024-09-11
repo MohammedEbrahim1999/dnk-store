@@ -1,0 +1,82 @@
+[debug] [2024-07-15T03:36:44.416Z] ----------------------------------------------------------------------
+[debug] [2024-07-15T03:36:44.418Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-15T03:36:44.418Z] CLI Version:   13.9.0
+[debug] [2024-07-15T03:36:44.418Z] Platform:      win32
+[debug] [2024-07-15T03:36:44.418Z] Node Version:  v20.12.2
+[debug] [2024-07-15T03:36:44.418Z] Time:          Mon Jul 15 2024 06:36:44 GMT+0300 (Arabian Standard Time)
+[debug] [2024-07-15T03:36:44.418Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-15T03:36:44.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-15T03:36:44.466Z] > authorizing via signed-in user (mohammed.ebrahim9921@gmail.com)
+[debug] [2024-07-15T03:36:44.466Z] [iam] checking project dnk-store-6e185 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-15T03:36:44.467Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions [none]
+[debug] [2024-07-15T03:36:44.467Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions x-goog-quota-user=projects/dnk-store-6e185
+[debug] [2024-07-15T03:36:44.467Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-15T03:36:45.524Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions 200
+[debug] [2024-07-15T03:36:45.524Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-15T03:36:45.525Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dnk-store-6e185 [none]
+[debug] [2024-07-15T03:36:46.031Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dnk-store-6e185 200
+[debug] [2024-07-15T03:36:46.031Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dnk-store-6e185 {"projectId":"dnk-store-6e185","projectNumber":"888782929897","displayName":"DNK Store","name":"projects/dnk-store-6e185","resources":{"hostingSite":"dnk-store-6e185"},"state":"ACTIVE","etag":"1_c32cabac-2107-4221-a126-8dbb064214f6"}
+[info] 
+[info] === Deploying to 'dnk-store-6e185'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-07-15T03:36:46.036Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions [none]
+[debug] [2024-07-15T03:36:46.036Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-07-15T03:36:48.626Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions 200
+[debug] [2024-07-15T03:36:48.626Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions {"name":"projects/888782929897/sites/dnk-store-6e185/versions/d83f8ba03caa79df","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[dnk-store-6e185]: beginning deploy... 
+[debug] [2024-07-15T03:36:48.757Z] Error: EPERM: operation not permitted, scandir 'D:\Mohammed\Projects\dnk-store\.next\trace'
+    at Object.readdirSync (node:fs:1508:26)
+    at GlobSync._readdir (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-07-15T03:37:05.113Z] ----------------------------------------------------------------------
+[debug] [2024-07-15T03:37:05.115Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-15T03:37:05.115Z] CLI Version:   13.9.0
+[debug] [2024-07-15T03:37:05.115Z] Platform:      win32
+[debug] [2024-07-15T03:37:05.116Z] Node Version:  v20.12.2
+[debug] [2024-07-15T03:37:05.116Z] Time:          Mon Jul 15 2024 06:37:05 GMT+0300 (Arabian Standard Time)
+[debug] [2024-07-15T03:37:05.116Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-15T03:37:05.161Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-15T03:37:05.162Z] > authorizing via signed-in user (mohammed.ebrahim9921@gmail.com)
+[debug] [2024-07-15T03:37:05.162Z] [iam] checking project dnk-store-6e185 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-15T03:37:05.163Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions [none]
+[debug] [2024-07-15T03:37:05.163Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions x-goog-quota-user=projects/dnk-store-6e185
+[debug] [2024-07-15T03:37:05.163Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-15T03:37:06.145Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions 200
+[debug] [2024-07-15T03:37:06.145Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dnk-store-6e185:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-15T03:37:06.145Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dnk-store-6e185 [none]
+[debug] [2024-07-15T03:37:06.661Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dnk-store-6e185 200
+[debug] [2024-07-15T03:37:06.662Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dnk-store-6e185 {"projectId":"dnk-store-6e185","projectNumber":"888782929897","displayName":"DNK Store","name":"projects/dnk-store-6e185","resources":{"hostingSite":"dnk-store-6e185"},"state":"ACTIVE","etag":"1_c32cabac-2107-4221-a126-8dbb064214f6"}
+[info] 
+[info] === Deploying to 'dnk-store-6e185'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-07-15T03:37:06.666Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions [none]
+[debug] [2024-07-15T03:37:06.666Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-07-15T03:37:08.556Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions 200
+[debug] [2024-07-15T03:37:08.556Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dnk-store-6e185/versions {"name":"projects/888782929897/sites/dnk-store-6e185/versions/1782a0817130a618","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[dnk-store-6e185]: beginning deploy... 
+[debug] [2024-07-15T03:37:08.697Z] Error: EPERM: operation not permitted, scandir 'D:\Mohammed\Projects\dnk-store\.next\trace'
+    at Object.readdirSync (node:fs:1508:26)
+    at GlobSync._readdir (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\hassa\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+[error] 
+[error] Error: An unexpected error has occurred.
