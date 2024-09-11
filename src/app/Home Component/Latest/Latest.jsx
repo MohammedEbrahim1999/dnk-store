@@ -32,7 +32,7 @@ const items = [
         title: "Let's Lorem Suit Up!",
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.',
         buttonText: 'CHECK OUT',
-        image: '/imgs/itemthree.jpg',
+        image: '/imgs/itemThree.jpg',
     },
 ];
 
